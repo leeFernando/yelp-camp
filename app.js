@@ -21,7 +21,10 @@ mongoose.set('useUnifiedTopology', true);
     useNewUrlParser: true,
     useFindAndModify: false
 }); */
-mongoose.connect("mongodb+srv://fernando:yelpcamp887988@cluster0-nobca.mongodb.net/test?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://fernando:yelpcamp887988@cluster0-nobca.mongodb.net/test?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useFindAndModify: false
+});
 // seeDB();
     
 app.set("view engine", "ejs");
