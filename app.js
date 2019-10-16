@@ -17,10 +17,11 @@ var campgroundRoutes    = require("./routes/campgrounds"),
 
 //connecting app to DB
 mongoose.set('useUnifiedTopology', true);
-mongoose.connect("mongodb://localhost:27017/yelp_camp", {
+/* mongoose.connect("mongodb://localhost:27017/yelp_camp", {
     useNewUrlParser: true,
     useFindAndModify: false
-});
+}); */
+mongoose.connect("mongodb+srv://fernando:yelpcamp887988@cluster0-nobca.mongodb.net/test?retryWrites=true&w=majority");
 // seeDB();
     
 app.set("view engine", "ejs");
